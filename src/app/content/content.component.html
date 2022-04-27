@@ -1,0 +1,13 @@
+
+<app-navbar></app-navbar>
+
+
+<div *ngFor="let item of objects">
+  {{item.name}}
+  {{item.age}}
+  {{item.hobby}}
+
+</div>
+
+<input type="text"(keypress)="display()" [(ngModel)]="firstName">
+
